@@ -38,10 +38,6 @@ contract Circle is Shape {
     }
     
     function getArea() public view returns (uint) {
-        return calculateArea();
-    }
-
-    function calculateArea() private view returns (uint) {
         uint pi = 3; // Simplified value of pi for demonstration purposes
         return (pi * radius * radius) / 4;
     }
