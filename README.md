@@ -1,8 +1,6 @@
 curl -sSL https://bit.ly/2ysbOFE | bash -s
 
-cd fabric-samples
-
-cd test-network
+cd fabric-samples/test-network
 
 sudo ./network.sh up
 
