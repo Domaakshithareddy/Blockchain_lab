@@ -17,6 +17,28 @@ sudo docker exec peer0.org2.example.com peer channel list
 sudo ./network.sh down
 
 
+working:
+
+rm -rf fabric-samples
+
+sudo apt-get update
+
+sudo apt-get install docker-compose-plugin
+
+curl -sSL https://raw.githubusercontent.com/hyperledger/fabric/main/scripts/bootstrap.sh | bash -s -- 2.5.0
+
+cd fabric-samples/test-network
+
+CONTAINER_CLI_COMPOSE="docker compose" ./network.sh up
+
+./network.sh createChannel -c testchannel
+
+docker exec peer0.org1.example.com peer channel list
+
+docker exec peer0.org2.example.com peer channel list
+
+CONTAINER_CLI_COMPOSE="docker compose" ./network.sh down
+
 
 # Solidity tuffle ganace
 
