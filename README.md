@@ -16,7 +16,7 @@ sudo ./network.sh down
 
 
 
-#variable execution
+# variable execution
 
 Initial set up:
 mkdir SolidityLab
@@ -41,7 +41,7 @@ npx truffle migrate --network development
 
 npx truffle console --network development
 
-###7. Array and length
+### 7. Array and length
 
 Step 1 — Get instance
 
