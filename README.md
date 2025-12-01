@@ -114,7 +114,7 @@ Ganache:
 
 Ganache is a local Ethereum blockchain used for testing smart contracts. It provides pre-funded accounts, instant mining, and detailed logs of blocks and transactions. It integrates with tools like Truffle to allow local, cost-free deployment of contracts before using real testnets.
 
-### 3
+### 4
 
 Solidity Program Structure:
 
