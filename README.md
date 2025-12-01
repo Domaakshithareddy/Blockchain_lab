@@ -16,7 +16,7 @@ sudo ./network.sh down
 
 
 
-# variable execution
+# Solidity tuffle ganace
 
 Initial set up:
 mkdir SolidityLab
