@@ -79,6 +79,23 @@ len = await instance.getArrayLength()
 
 len.toString()
 
+### 5. Increment Decrement
+
+let ctr = await Counter.deployed()
+
+(await ctr.getCounter()).toString()
+
+await ctr.increment()
+
+(await ctr.getCounter()).toString()
+
+await ctr.decrement()
+
+(await ctr.getCounter()).toString()
+
+
+
+
 let v = await Variables.deployed()
 (await v.stateVariable()).toString()
 (await v.func()).toString()
