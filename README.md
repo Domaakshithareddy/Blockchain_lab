@@ -43,41 +43,17 @@ npx truffle console --network development
 
 ### 7. Array and length
 
-Step 1 — Get instance
+let arr = await ArrayLength.deployed()
 
-instance = await ArrayLength.deployed()
+(await arr.getArray()).map(n => n.toString())
 
-Step 2 — Get array
+(await arr.getArrayLength()).toString()
 
-arr = await instance.getArray()
+await arr.addElement(10)
 
-Step 3 — Print array
+(await arr.getArray()).map(n => n.toString())
 
-arr.toString()
-
-Step 4 — Get length
-
-len = await instance.getArrayLength()
-
-Step 5 — Print length
-
-len.toString()
-
-Step 6 — Add a new element
-
-await instance.addElement(99)
-
-Step 7 — Read updated array
-
-arr = await instance.getArray()
-
-arr.toString()
-
-Step 8 — Read updated length
-
-len = await instance.getArrayLength()
-
-len.toString()
+(await arr.getArrayLength()).toString()
 
 ### 5. Increment Decrement
 
