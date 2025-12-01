@@ -1,4 +1,4 @@
-### 10. fabric
+### 9. fabric
 
 curl -sSL https://bit.ly/2ysbOFE | bash -s
 
@@ -71,7 +71,7 @@ await ctr.decrement()
 
 (await ctr.getCounter()).toString()
 
-### 8. Variables
+### 10. Variables
 
 let v = await Variables.deployed()
 
